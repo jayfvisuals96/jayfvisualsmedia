@@ -56,28 +56,28 @@
             opacity: 0.8;
         }
 
-   .hero-text {
-    position: absolute;
-    text-align: center;
-    color: white;
-    z-index: 5;
-    padding: 0 20px;
-}
-.hero-text h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    letter-spacing: 1px;
-    color: #ffffff;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
-                 0 0 15px rgba(255, 255, 255, 0.15);
-}
+        .hero-text {
+            position: absolute;
+            text-align: center;
+            color: white;
+            z-index: 5;
+            padding: 0 20px;
+        }
 
-.hero-text p {
-    font-size: 1.2rem;
-    font-weight: 300;
-    /* You can also add a tiny glow here if you want, e.g.: */
-    /* text-shadow: 0 0 3px rgba(255,255,255,0.1); */
-}
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+            color: #ffffff;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.3),
+                         0 0 15px rgba(255, 255, 255, 0.15);
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
         /* ABOUT SECTION */
         .about {
             max-width: 900px;
@@ -92,10 +92,9 @@
             margin-bottom: 20px;
         }
 
-        .about p {
-            line-height: 1.7;
-            font-size: 1.1rem;
-            color: #333;
+        .about video {
+            width: 100%;
+            border-radius: 8px;
         }
 
         /* CONTACT SECTION */
@@ -144,14 +143,12 @@
         <div style="font-size: 1.3rem; font-weight: 600;">JAYFVISUALS</div>
         <div>
             <a href="index.html">Home</a>
-            <!-- Projects link points to GitHub Pages project URL (temporary placeholder) -->
             <a href="projects.html" onclick="alert('Projects page coming soon!'); return false;">Projects</a>
         </div>
     </nav>
 
     <!-- HERO (INTRO VIDEO) -->
     <section class="hero">
-        <!-- Replace video src when you're ready -->
         <video autoplay muted loop>
             <source src="your-intro-video.mp4" type="video/mp4">
         </video>
@@ -164,19 +161,19 @@
 
     <!-- ABOUT SECTION -->
     <section class="about">
-        <h2>About Me</h2>
-        <p>
-            I’m a freelance videographer based in Australia, specialising in cinematic storytelling, events,
-            fitness content, real estate, and branded visuals.  
-            <br><br>
-            My focus is simple: clean visuals, strong emotion, and high-quality delivery for every client.
-        </p>
+        <h2>My Work</h2>
+        <div>
+            <video controls autoplay muted loop>
+                <source src="PROMO.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
     </section>
 
     <!-- CONTACT SECTION -->
     <section class="contact">
         <h2>Get In Touch</h2>
-        <p><a href="mailto:your-email@example.com">jayfvisuals@outlook.com</a></p>
+        <p><a href="mailto:jayfvisuals@outlook.com">jayfvisuals@outlook.com</a></p>
     </section>
 
     <footer>
