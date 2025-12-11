@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay F Visuals – Videography</title>
+
+    <!-- GOOGLE FONTS -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Montserrat', sans-serif;
+            background: #f2f2f2;
+            color: #0a0a0a;
+        }
+
+        /* NAVBAR */
+        nav {
+            width: 100%;
+            padding: 20px 40px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f2f2f2;
+            position: sticky;
+            top: 0;
+            z-index: 20;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #0a0a0a;
+            font-weight: 600;
+            margin-left: 20px;
+        }
+
+        /* HERO SECTION */
+        .hero {
+            width: 100%;
+            height: 75vh;
+            background: #000;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.8;
+        }
+
+        .hero-text {
+            position: absolute;
+            text-align: center;
+            color: white;
+            z-index: 5;
+            padding: 0 20px;
+        }
+
+        .hero-text h1 {
+            font-size: 3rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+
+        .hero-text p {
+            font-size: 1.2rem;
+            font-weight: 300;
+        }
+
+        /* ABOUT SECTION */
+        .about {
+            max-width: 900px;
+            margin: 80px auto;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .about h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .about p {
+            line-height: 1.7;
+            font-size: 1.1rem;
+            color: #333;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            margin: 100px auto;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .contact a {
+            color: #000;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 60px;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        /* MOBILE */
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+            .hero-text p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <nav>
+        <div style="font-size: 1.3rem; font-weight: 600;">JAY F VISUALS</div>
+        <div>
+            <a href="index.html">Home</a>
+            <!-- Projects link points to GitHub Pages project URL (temporary placeholder) -->
+            <a href="projects.html" onclick="alert('Projects page coming soon!'); return false;">Projects</a>
+        </div>
+    </nav>
+
+    <!-- HERO (INTRO VIDEO) -->
+    <section class="hero">
+        <!-- Replace video src when you're ready -->
+        <video autoplay muted loop>
+            <source src="your-intro-video.mp4" type="video/mp4">
+        </video>
+
+        <div class="hero-text">
+            <h1>Cinematic Videography</h1>
+            <p>Bringing your vision to life through film.</p>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a freelance videographer based in Australia, specialising in cinematic storytelling, events,
+            fitness content, real estate, and branded visuals.  
+            <br><br>
+            My focus is simple: clean visuals, strong emotion, and high-quality delivery for every client.
+        </p>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact">
+        <h2>Get In Touch</h2>
+        <p><a href="mailto:your-email@example.com">your-email@example.com</a></p>
+    </section>
+
+    <footer>
+        © 2025 Jay F Visuals — All Rights Reserved
+    </footer>
+
+</body>
+</html>
