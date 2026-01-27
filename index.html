@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,13 +50,12 @@
         }
 
         /* THIN LINE UNDER NAVBAR */
-/* NAVBAR LINE */
-.nav-line {
-    height: 1px;
-    background-color: #000;
-    margin: 8px auto 0 auto;  /* keeps it centered under navbar */
-    width: calc(100% - 0px); /* change this number to make the line longer or shorter */
-}
+        .nav-line {
+            height: 1px;
+            background-color: #000;
+            margin: 8px auto 0 auto;  /* keeps it centered under navbar */
+            width: calc(100% - 0px); /* adjust this number to change length */
+        }
 
         /* HERO VIDEO */
         .hero {
@@ -63,7 +64,7 @@
             overflow: hidden;
             background: #d8d6d3; /* grey background so no black bars */
             padding-top: 20px;
-            padding-bottom: -50px; 
+            padding-bottom: 0px;
         }
 
         /* Responsive 16:9 YouTube container with proper scaling */
@@ -86,34 +87,42 @@
             height: 100%;
         }
 
-        /* HERO TEXT OVERLAY */
+        /* HERO TEXT OVERLAY HORIZONTAL */
         .hero-overlay {
             position: absolute;
             top: 10px;
             left: var(--side-padding);
             z-index: 5;
-            color: white;
+            display: flex;
+            align-items: center;
+            gap: 8px; /* spacing between text and line */
+            color: #000; /* black text */
         }
 
         .hero-overlay h1 {
             margin: 0;
             font-size: 1.4rem;
             font-weight: 600;
-            letter-spacing: 1px;
+        }
+
+        .hero-overlay .separator {
+            display: inline-block;
+            width: 2px; /* thickness of vertical line */
+            height: 18px; /* height of line */
+            background-color: #000; /* black line */
         }
 
         .hero-overlay p {
-            margin-top: 6px;
+            margin: 0;
             font-size: 0.95rem;
-            font-weight: 300;
-            opacity: 0.9;
+            font-weight: 400;
         }
 
         /* CONTACT SECTION */
         .contact {
             margin: 10px auto;
             text-align: center;
-            padding: -50px;
+            padding: 0px;
         }
 
         .contact h2 {
@@ -200,6 +209,7 @@
 
         <div class="hero-overlay">
             <h1>JAYFVISUALS</h1>
+            <span class="separator"></span>
             <p>Documentary & Corporate Cinematographer</p>
         </div>
     </section>
