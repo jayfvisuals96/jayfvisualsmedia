@@ -56,21 +56,22 @@
             padding-bottom: 20px;
         }
 
-        /* Responsive 16:9 YouTube container, scaled down more */
+        /* Responsive 16:9 YouTube container with proper scaling */
         .video-container {
             position: relative;
-            width: 90%;       /* smaller than before */
-            max-width: 800px; /* scaled down a lot more */
+            width: 100%;
             padding-top: 56.25%; /* 16:9 ratio */
-            overflow: hidden;
-            margin: 0 auto; /* center horizontally */
+            margin: 0 auto;
+            overflow: visible;
+            text-align: center;
         }
 
-        .video-container iframe {
+        .youtube-video {
             position: absolute;
             top: 0;
             left: 50%;
-            transform: translateX(-50%);
+            transform: translateX(-50%) scale(0.6); /* scale down entire video */
+            transform-origin: top center;
             width: 100%;
             height: 100%;
         }
@@ -155,9 +156,8 @@
                 font-size: 0.9rem;
             }
 
-            .video-container {
-                width: 95%; /* slightly bigger on mobile */
-                max-width: 100%; /* fit mobile screen */
+            .youtube-video {
+                transform: translateX(-50%) scale(0.45); /* scale down more on mobile */
             }
         }
     </style>
@@ -181,7 +181,7 @@
     <!-- HERO VIDEO -->
     <section class="hero">
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/XyHjzJdLcwM" 
+            <iframe class="youtube-video" src="https://www.youtube.com/embed/XyHjzJdLcwM" 
                     frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
             </iframe>
         </div>
