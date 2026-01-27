@@ -34,7 +34,7 @@
             z-index: 20;
         }
 
-        /* Adjust top logo */
+        /* ⬅️ Adjust alignment */
         .nav-brand {
             margin-left: -20px;
         }
@@ -46,19 +46,29 @@
             margin-left: 20px;
         }
 
-        /* HERO SECTION */
+        /* HERO VIDEO */
         .hero {
             width: 100%;
-            height: 75vh;
             position: relative;
             overflow: hidden;
             background: #000;
         }
 
-        .hero iframe {
+        /* Responsive 16:9 YouTube container */
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-top: 56.25%; /* 16:9 ratio */
+            overflow: hidden;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 100%;
             height: 100%;
-            border: none;
         }
 
         /* HERO TEXT OVERLAY */
@@ -101,21 +111,18 @@
             text-decoration: none;
             font-weight: 400;
             font-size: 1.1rem;
-            margin: 0 6px;
         }
 
         /* SOCIAL ICONS */
         .social-icons {
-            display: inline-flex;
-            align-items: center;
-            margin-top: 8px;
+            margin-top: 10px;
         }
 
         .social-icons a {
             text-decoration: none;
             color: #000;
-            font-size: 1.3rem;
-            margin: 0 6px;
+            font-size: 1.4rem;
+            margin: 0 8px;
         }
 
         footer {
@@ -133,11 +140,7 @@
             }
 
             .nav-brand {
-                margin-left: -20px; /* match desktop for alignment */
-            }
-
-            .hero {
-                height: 60vh;
+                margin-left: -20px;
             }
 
             .hero-overlay h1 {
@@ -166,14 +169,13 @@
         </div>
     </nav>
 
-    <!-- HERO VIDEO (YouTube Embed) -->
+    <!-- HERO VIDEO -->
     <section class="hero">
-        <iframe 
-            src="https://www.youtube.com/embed/XyHjzJdLcwM?controls=1&rel=0&modestbranding=1" 
-            title="Hero Video"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen>
-        </iframe>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/XyHjzJdLcwM" 
+                    frameborder="0" allow="autoplay; fullscreen" allowfullscreen>
+            </iframe>
+        </div>
 
         <div class="hero-overlay">
             <h1>JAYFVISUALS</h1>
@@ -188,8 +190,8 @@
             <a href="mailto:jayfvisuals@outlook.com">jayfvisuals@outlook.com</a>
         </p>
         <div class="social-icons">
-            <a href="https://www.instagram.com/jayfvisuals?igsh=YWV4ZmMzN2hkbWZl&utm_source=qr" target="_blank">📷</a>
-            <a href="https://www.youtube.com/@jayfvisuals" target="_blank">▶️</a>
+            <a href="https://www.instagram.com/jayfvisuals?igsh=YWV4ZmMzN2hkbWZl&utm_source=qr" target="_blank">&#x1F47E;</a>
+            <a href="https://www.youtube.com/@jayfvisuals" target="_blank">&#x25B6;</a>
         </div>
     </section>
 
