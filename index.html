@@ -34,6 +34,11 @@
             z-index: 20;
         }
 
+        /* ⬅️ THIS IS THE ONLY NEW RULE */
+        .nav-brand {
+            margin-left: -6px;
+        }
+
         nav a {
             text-decoration: none;
             color: #0a0a0a;
@@ -83,7 +88,7 @@
         .contact {
             margin: 60px auto;
             text-align: center;
-            padding: 20px 20px;
+            padding: 20px;
         }
 
         .contact h2 {
@@ -112,6 +117,10 @@
                 --side-padding: 20px;
             }
 
+            .nav-brand {
+                margin-left: -4px;
+            }
+
             .hero {
                 height: 60vh;
             }
@@ -131,9 +140,11 @@
 
     <!-- NAVIGATION -->
     <nav>
-        <a href="index.html" style="font-size: 1.3rem; font-weight: 600; text-decoration:none; color:#0a0a0a;">
-            JAYFVISUALS
-        </a>
+        <div class="nav-brand">
+            <a href="index.html" style="font-size: 1.3rem; font-weight: 600; text-decoration:none; color:#0a0a0a;">
+                JAYFVISUALS
+            </a>
+        </div>
         <div>
             <a href="index.html">Home</a>
             <a href="projects.html" onclick="alert('Projects page coming soon!'); return false;">Projects</a>
