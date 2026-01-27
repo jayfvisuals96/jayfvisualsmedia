@@ -32,6 +32,7 @@
             position: sticky;
             top: 0;
             z-index: 20;
+            flex-wrap: wrap;
         }
 
         /* ⬅️ Adjust alignment */
@@ -46,17 +47,12 @@
             margin-left: 20px;
         }
 
-        /* NAV CONTENT WRAPPER FOR LINE */
-        .nav-content {
-            display: inline-block; /* only as wide as text inside */
-            position: relative;
-        }
-
-        /* THIN LINE UNDER NAVBAR TEXT */
-        .nav-separator {
+        /* THIN LINE UNDER NAVBAR */
+        .nav-line {
             height: 1px;
             background-color: #000;
-            margin-top: 8px; /* space from navbar text */
+            margin: 8px auto 0 auto;
+            width: calc(100% - 2 * var(--side-padding)); /* leave padding space on edges */
         }
 
         /* HERO VIDEO */
@@ -180,19 +176,17 @@
 
     <!-- NAVIGATION -->
     <nav>
-        <div class="nav-content">
-            <div class="nav-brand">
-                <a href="index.html" style="font-size: 1.3rem; font-weight: 600; text-decoration:none; color:#0a0a0a;">
-                    JAYFVISUALS
-                </a>
-            </div>
-            <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="projects.html" onclick="alert('Projects page coming soon!'); return false;">Projects</a>
-            </div>
-            <!-- THIN LINE UNDER NAVBAR TEXT -->
-            <div class="nav-separator"></div>
+        <div class="nav-brand">
+            <a href="index.html" style="font-size: 1.3rem; font-weight: 600; text-decoration:none; color:#0a0a0a;">
+                JAYFVISUALS
+            </a>
         </div>
+        <div>
+            <a href="index.html">Home</a>
+            <a href="projects.html" onclick="alert('Projects page coming soon!'); return false;">Projects</a>
+        </div>
+        <!-- Thin line under navbar -->
+        <div class="nav-line"></div>
     </nav>
 
     <!-- HERO VIDEO -->
