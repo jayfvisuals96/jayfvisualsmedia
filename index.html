@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -42,7 +40,19 @@
             margin-left: -20px;
         }
 
-        nav a {
+        /* Top JAYFVISUALS box */
+        .nav-brand a {
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            color: #d8d6d3; /* greyish white text */
+            background-color: #000; /* black box */
+            padding: 5px 12px; /* space around text */
+            display: inline-block;
+            border-radius: 3px; /* optional rounded corners */
+        }
+
+        nav a:not(.nav-brand a) {
             text-decoration: none;
             color: #0a0a0a;
             font-weight: 600;
@@ -187,7 +197,7 @@
     <!-- NAVIGATION -->
     <nav>
         <div class="nav-brand">
-            <a href="index.html" style="font-size: 1.3rem; font-weight: 600; text-decoration:none; color:#0a0a0a;">
+            <a href="index.html">
                 JAYFVISUALS
             </a>
         </div>
