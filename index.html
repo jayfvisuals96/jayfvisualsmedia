@@ -51,16 +51,16 @@
             width: 100%;
             position: relative;
             overflow: hidden;
-            background: #d8d6d3;
-            padding-top: 20px; /* optional spacing above video */
-            padding-bottom: 20px; /* optional spacing below video */
+            background: #d8d6d3; /* grey background so no black bars */
+            padding-top: 20px;
+            padding-bottom: 20px;
         }
 
-        /* Responsive 16:9 YouTube container, scaled down */
+        /* Responsive 16:9 YouTube container, scaled down more */
         .video-container {
             position: relative;
-            width: 100%;
-            max-width: 1200px; /* scale down the video */
+            width: 90%;       /* smaller than before */
+            max-width: 800px; /* scaled down a lot more */
             padding-top: 56.25%; /* 16:9 ratio */
             overflow: hidden;
             margin: 0 auto; /* center horizontally */
@@ -153,6 +153,11 @@
 
             .hero-overlay p {
                 font-size: 0.9rem;
+            }
+
+            .video-container {
+                width: 95%; /* slightly bigger on mobile */
+                max-width: 100%; /* fit mobile screen */
             }
         }
     </style>
