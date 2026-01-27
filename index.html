@@ -9,6 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
 
     <style>
+        :root {
+            --side-padding: 40px;
+        }
+
         body {
             margin: 0;
             font-family: 'Montserrat', sans-serif;
@@ -19,7 +23,7 @@
         /* NAVBAR */
         nav {
             width: 100%;
-            padding: 20px 40px;
+            padding: 20px var(--side-padding);
             box-sizing: border-box;
             display: flex;
             justify-content: space-between;
@@ -56,7 +60,7 @@
         .hero-overlay {
             position: absolute;
             top: 40px;
-            left: 40px;
+            left: var(--side-padding);
             z-index: 5;
             color: white;
         }
@@ -77,14 +81,14 @@
 
         /* CONTACT SECTION */
         .contact {
-            margin: 100px auto;
+            margin: 60px auto;
             text-align: center;
-            padding: 40px 20px;
+            padding: 20px 20px;
         }
 
         .contact h2 {
             font-size: 2rem;
-            margin-bottom: 20px;
+            margin-bottom: 12px;
         }
 
         .contact a {
@@ -97,20 +101,19 @@
         footer {
             text-align: center;
             padding: 20px 0;
-            margin-top: 60px;
+            margin-top: 40px;
             color: #666;
             font-size: 0.9rem;
         }
 
         /* MOBILE */
         @media (max-width: 768px) {
-            .hero {
-                height: 60vh;
+            :root {
+                --side-padding: 20px;
             }
 
-            .hero-overlay {
-                top: 20px;
-                left: 20px;
+            .hero {
+                height: 60vh;
             }
 
             .hero-overlay h1 {
@@ -146,7 +149,7 @@
 
         <div class="hero-overlay">
             <h1>JAYFVISUALS</h1>
-            <p>Documentary & Corporate Cinematography</p>
+            <p>Documentary & Corporate Cinematographer</p>
         </div>
     </section>
 
