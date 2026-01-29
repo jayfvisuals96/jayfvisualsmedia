@@ -194,9 +194,9 @@
         --side-padding: 20px;
     }
 
-    /* Move the nav brand slightly to the right */
+    /* Top black box: slightly left */
     .nav-brand {
-        margin-left: 10px; /* instead of -20px */
+        margin-left: 5px; /* moved slightly left from previous 10px */
     }
 
     /* Hero overlay text sizing */
@@ -208,16 +208,35 @@
         font-size: 0.9rem;
     }
 
-    /* Double the video size and move it down */
-    .youtube-video {
-        transform: translateX(-50%) translateY(80px) scale(0.9);
-        transform-origin: top center;
+    /* Hero overlay container positioning for second JF Visuals text */
+    .hero-overlay {
+        top: 20px; /* move everything closer to top */
+        left: 20px; /* slight alignment from side */
+        flex-direction: column; /* stack text nicely on mobile */
+        align-items: flex-start; 
+        gap: 6px;
     }
 
-    /* Move hero overlay down slightly to avoid overlap */
-    .hero-overlay {
-        top: 50px;
-        left: 20px; /* optional slight adjustment for alignment */
+    /* Video size: keep 16:9, scale larger */
+    .video-container {
+        padding-top: 56.25%; /* 16:9 ratio maintained */
+        margin-bottom: 10px; /* space for Get in Touch section */
+    }
+
+    .youtube-video {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%) scale(0.9); /* bigger, keep ratio */
+        transform-origin: top center;
+        width: 100%;
+        height: 100%;
+    }
+
+    /* Contact section stays below video naturally */
+    .contact {
+        margin-top: 10px; /* adjust spacing below video */
+        padding: 0px;
     }
 }
     </style>
