@@ -196,12 +196,12 @@
 
     /* Top black box JF Visuals: slightly left */
     .nav-brand {
-        margin-left: 5px; /* slight adjustment from previous */
+        margin-left: 2px; /* very slight adjustment from previous */
     }
 
     /* Hero overlay text sizing and positioning */
     .hero-overlay {
-        top: 15px; /* slightly down from top of screen */
+        top: 12px; /* slightly down from top */
         left: var(--side-padding);
         display: flex;
         flex-direction: row; /* keep all in one line */
@@ -224,27 +224,42 @@
         height: 16px; /* adjust line height if needed */
     }
 
-    /* Video size: keep 16:9, but move down so it doesn't overlap */
+    /* Video size: maintain 16:9, move down to avoid overlapping text */
     .video-container {
-        padding-top: 56.25%; /* 16:9 ratio maintained */
-        margin-top: 60px; /* moves the entire video down below the hero text */
-        margin-bottom: 10px; /* spacing for contact section */
+        padding-top: 56.25%; /* maintain 16:9 ratio */
+        margin-top: 65px; /* moves the video down */
+        margin-bottom: 15px; /* space for contact section */
     }
 
     .youtube-video {
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translateX(-50%) scale(0.9); /* scale slightly bigger for mobile */
+        transform: translateX(-50%) scale(0.9); /* bigger on mobile */
         transform-origin: top center;
         width: 100%;
         height: 100%;
     }
 
-    /* Contact section moves down naturally */
+    /* Contact section: move slightly down */
     .contact {
-        margin-top: 10px; /* adjust spacing below video */
+        margin-top: 10px;
         padding: 0px;
+    }
+
+    .contact h2 {
+        font-size: 1.6rem; /* slightly smaller than desktop Get In Touch */
+        font-weight: 500;
+    }
+
+    .contact a {
+        font-size: 1.05rem; /* email link slightly smaller */
+    }
+
+    /* Footer adjustments */
+    footer {
+        font-size: 0.8rem; /* smaller on mobile */
+        margin-top: 20px; /* push it down */
     }
 }
     </style>
