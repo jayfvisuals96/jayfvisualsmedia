@@ -194,46 +194,54 @@
         --side-padding: 20px;
     }
 
-    /* Top black box: slightly left */
+    /* Top black box JF Visuals: slightly left */
     .nav-brand {
-        margin-left: 5px; /* moved slightly left from previous 10px */
+        margin-left: 5px; /* slight adjustment from previous */
     }
 
-    /* Hero overlay text sizing */
+    /* Hero overlay text sizing and positioning */
+    .hero-overlay {
+        top: 15px; /* slightly down from top of screen */
+        left: var(--side-padding);
+        display: flex;
+        flex-direction: row; /* keep all in one line */
+        align-items: center;
+        gap: 6px; /* spacing between JF visuals and documentary text */
+    }
+
     .hero-overlay h1 {
-        font-size: 1.2rem;
+        font-size: 1rem; /* slightly smaller to fit on one line */
+        font-weight: 500;
     }
 
     .hero-overlay p {
-        font-size: 0.9rem;
+        font-size: 0.85rem; /* slightly smaller to fit */
+        margin: 0;
+        font-weight: 400;
     }
 
-    /* Hero overlay container positioning for second JF Visuals text */
-    .hero-overlay {
-        top: 20px; /* move everything closer to top */
-        left: 20px; /* slight alignment from side */
-        flex-direction: column; /* stack text nicely on mobile */
-        align-items: flex-start; 
-        gap: 6px;
+    .hero-overlay .separator {
+        height: 16px; /* adjust line height if needed */
     }
 
-    /* Video size: keep 16:9, scale larger */
+    /* Video size: keep 16:9, but move down so it doesn't overlap */
     .video-container {
         padding-top: 56.25%; /* 16:9 ratio maintained */
-        margin-bottom: 10px; /* space for Get in Touch section */
+        margin-top: 60px; /* moves the entire video down below the hero text */
+        margin-bottom: 10px; /* spacing for contact section */
     }
 
     .youtube-video {
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translateX(-50%) scale(0.9); /* bigger, keep ratio */
+        transform: translateX(-50%) scale(0.9); /* scale slightly bigger for mobile */
         transform-origin: top center;
         width: 100%;
         height: 100%;
     }
 
-    /* Contact section stays below video naturally */
+    /* Contact section moves down naturally */
     .contact {
         margin-top: 10px; /* adjust spacing below video */
         padding: 0px;
