@@ -188,29 +188,38 @@
             color: #666;
             font-size: 0.9rem;
         }
+/* MOBILE */
+@media (max-width: 768px) {
+    :root {
+        --side-padding: 20px;
+    }
 
-        /* MOBILE */
-        @media (max-width: 768px) {
-            :root {
-                --side-padding: 20px;
-            }
+    /* Move the nav brand slightly to the right */
+    .nav-brand {
+        margin-left: 10px; /* instead of -20px */
+    }
 
-            .nav-brand {
-                margin-left: -20px;
-            }
+    /* Hero overlay text sizing */
+    .hero-overlay h1 {
+        font-size: 1.2rem;
+    }
 
-            .hero-overlay h1 {
-                font-size: 1.2rem;
-            }
+    .hero-overlay p {
+        font-size: 0.9rem;
+    }
 
-            .hero-overlay p {
-                font-size: 0.9rem;
-            }
+    /* Double the video size and move it down */
+    .youtube-video {
+        transform: translateX(-50%) translateY(80px) scale(0.9);
+        transform-origin: top center;
+    }
 
-            .youtube-video {
-                transform: translateX(-50%) scale(0.45); /* scale down more on mobile */
-            }
-        }
+    /* Move hero overlay down slightly to avoid overlap */
+    .hero-overlay {
+        top: 50px;
+        left: 20px; /* optional slight adjustment for alignment */
+    }
+}
     </style>
 </head>
 
